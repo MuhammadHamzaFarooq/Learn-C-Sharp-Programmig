@@ -1,0 +1,13 @@
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\bin\Debug\netcoreapp3.1\Basic Syntax.exe
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\bin\Debug\netcoreapp3.1\Basic Syntax.deps.json
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\bin\Debug\netcoreapp3.1\Basic Syntax.runtimeconfig.json
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\bin\Debug\netcoreapp3.1\Basic Syntax.runtimeconfig.dev.json
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\bin\Debug\netcoreapp3.1\Basic Syntax.dll
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\bin\Debug\netcoreapp3.1\Basic Syntax.pdb
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.csprojAssemblyReference.cache
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.AssemblyInfoInputs.cache
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.AssemblyInfo.cs
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.csproj.CoreCompileInputs.cache
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.dll
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.pdb
+D:\Learn C# Programming\Basic Syntax\Basic Syntax\obj\Debug\netcoreapp3.1\Basic Syntax.genruntimeconfig.cache
