@@ -130,9 +130,66 @@ namespace Basic_Syntax
             int q = 55;
             q <<= 8;   // q = q << 8
 
+            // 5- Comparision Operators
+
+            // equal to == 
+
+            int w = 0;
+            int r = 8;
+            bool t = (w == r);
+            bool t1 = (w != r);
+            bool t2 = (w > r);
+            bool t3 = (w < r);
+            bool t4 = (w >= r);
+            bool t5 = (w > r);
+
+            // 6 - Logical Operator 
+
+            // And &&
+            int value1 = 8;
+            float value2 = 0.00F;
+            bool res = (value1>5) && (value2<8);
+
+            // OR  ||
+            bool res1 = (value1 > 5) || (value2 < 8);
+
+            // NOT !
+            bool res2 = !(value1 > 5);
 
 
-         
+            // 7 - C# Maths
+
+            //Math.Max(x,y)
+            // The Math.Max(x, y) method can be used to find the highest value of x and y:
+
+            Math.Max(8, 99);
+
+            //Math.Min(x, y)
+            //The Math.Min(x, y) method can be used to find the lowest value of of x and y:
+
+
+            Math.Min(888, 9);
+
+            //  Math.Sqrt(x)
+            // The Math.Sqrt(x) method returns the square root of x:
+
+            Math.Sqrt(5);
+
+            //   Math.Abs(x)
+            //The Math.Abs(x) method returns the absolute(positive) value of x:
+
+            Math.Abs(-8.999);
+
+            //Math.Round()
+            // Math.Round() rounds a number to the nearest whole number:
+
+            Math.Round(2.09090888);
+
+
+
+
+
+
 
         }
     }
