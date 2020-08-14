@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace Basic_Syntax
@@ -401,6 +402,124 @@ namespace Basic_Syntax
                 Console.WriteLine(j);
                 j++;
             }
+
+            //The foreach Loop
+            //There is also a foreach loop, which is used exclusively to loop through elements in an array:
+            string[] car = { "Volvo", "BMW", "Mazda", "Ford" };
+            foreach(string rc in car)    // foreach is similar to for in =>   for i in 2..{ --body --}
+            {
+                Console.WriteLine(rc);
+            }
+
+            // C# Continue
+            //The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+            for (k = 0; k<=10; k++)
+            {
+                if (k == 5)
+                {
+                    continue;
+
+                }
+                Console.WriteLine(k);
+
+
+            }
+
+
+            //C# Array
+            int[] myNumber = { 1, 2, 33, 56, 7, 788, 99 };
+            Console.WriteLine(myNumber.Length);
+
+
+            //Array Methods
+            //There are many array methods available, for example Sort(), which sorts an array alphabetically or in an ascending order:
+            Array.Sort(myNumber);
+            foreach (int p in myNumber)
+            {
+                Console.WriteLine(p);
+            }
+
+
+            //System.Linq Namespace
+            //Other useful array methods, such as Min, Max, and Sum, can be found in the System.Linq namespace:
+            Console.WriteLine(myNumber.Min());
+            Console.WriteLine(myNumber.Max());
+            Console.WriteLine(myNumber.Sum());
+
+            //Other Ways to Create an Array
+
+            //If you are familiar with C#, you might have seen arrays created with the new keyword,
+            //and perhaps you have seen arrays with a specified size as well. In C#, there are different ways to create an array:
+
+            // Create an array of four elements, and add values later
+            string[] cars = new string[4];
+
+            // Create an array of four elements and add values right away 
+            string[] cars1 = new string[4] { "Volvo", "BMW", "Ford", "Mazda" };
+
+            // Create an array of four elements without specifying the size 
+            string[] cars2 = new string[] { "Volvo", "BMW", "Ford", "Mazda" };
+
+            // Create an array of four elements, omitting the new keyword, and without specifying the size
+            string[] cars3 = { "Volvo", "BMW", "Ford", "Mazda" }; // this is best way for define and initilize the array
+
+
+
+
+            //METHODS CONCEPT IN C#
+            /*A method is defined with the name of the method, followed by parentheses (). 
+             * C# provides some pre-defined methods, which you already are familiar with, 
+             * such as Main(), but you can also create your own methods to perform certain actions:
+             */
+
+            /* MyMethod() is the name of the method
+            static means that the method belongs to the Program class and not an object of the Program class.
+            You will learn more about objects and how to access methods through objects later in this tutorial.
+            void means that this method does not have a return value. You will learn more about return values later in this chapter
+            */
+
+            static void MyMethod()
+            {
+                // --  body -- 
+                Console.WriteLine("Method");
+                Console.WriteLine("Method");
+                Console.WriteLine("Method");
+                Console.WriteLine("Method");
+            }
+
+
+            // calling method 
+            MyMethod();   // call one time 
+
+            MyMethod();  // call second time
+
+
+            //C# Method Parameters
+
+            /*
+             Parameters and Arguments
+             
+            Information can be passed to methods as parameter. Parameters act as variables inside the method.
+            They are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+            The following example has a method that takes a string called fname as parameter. When the method is called,
+            we pass along a first name, which is used inside the method to print the full name:
+             
+             */
+
+            static void  mymehtod(string fname)
+            {
+                Console.WriteLine(fname + "khan");
+            }
+
+            // calling mehtod
+            mymehtod("hamza");
+            mymehtod("ali");
+            mymehtod("sufyan");
+
+
+
+
         }
 
     }
