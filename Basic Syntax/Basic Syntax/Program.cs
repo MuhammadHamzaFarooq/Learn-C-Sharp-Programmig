@@ -185,12 +185,79 @@ namespace Basic_Syntax
 
             Math.Round(2.09090888);
 
+            // 7- String 
+            // the are many method for sorting of string 
 
+            // a - Length
+
+            string country = "Pakistan ";
+            int len = country.Length;
+            Console.WriteLine(country + " word length is " + len);
+
+            // b - ToUpper()
+            Console.WriteLine(country.ToUpper() + " word length is " + len);
+
+            // c - ToLower
+            Console.WriteLine(country.ToLower() + " word length is " + len);
+
+            // f -You can also use the string.Concat() method to concatenate two strings:
+
+            string NAME = "Sufyan";
+            string FatherName = "Khan";
+            string FullName = string.Concat(NAME, FatherName);
+            Console.WriteLine(FullName);
+
+            //which substitutes values of variables into placeholders in a string. 
+            //Note that you do not have to worry about spaces, like with concatenation:
+            string firstName = "John";
+            string lastName = "Doe";
+            string fullname = $"My full name is: {firstName} {lastName}";
+            Console.WriteLine(fullname);
+
+
+            // g - You can access the characters in a string by referring to its index number inside square brackets [].
+
+            //   This example prints the first character in myString:
+
+            string myString = "Hello";
+            Console.WriteLine(myString[1]);
+
+            // h - You can also find the index position of a specific character in a string, by using the IndexOf() method:
+            Console.WriteLine(myString.IndexOf("l"));
+
+
+            // j - Another useful method is Substring(), which extracts the characters from a string, 
+            // starting from the specified character position/index, and returns a new string.
+            //This method is often used together with IndexOf() to get the specific character position:
+
+            // full name 
+            string studentName = "Jazib Khan";
+
+            // Location of K letter
+            int charPos = studentName.IndexOf("K");
+
+            //get last name for substring() method
+            string StudentLastName = studentName.Substring(charPos);
+            Console.WriteLine(StudentLastName);
+
+
+            // k - The sequence \"  inserts a double quote in a string:
+            string txt = "my naem is \"Hamza \" ";
+            Console.WriteLine(txt);
+
+            // l- The sequence \'  inserts a single quote in a string:
+            string txt1 = "my naem is \'Hamza \' ";
+            Console.WriteLine(txt1);
+
+            // q - The sequence \\  inserts a single backslash in a string:
+            string txt2 = "my naem is \\ Hamza  ";
+            Console.WriteLine(txt2);
 
 
 
 
 
         }
+
     }
 }
