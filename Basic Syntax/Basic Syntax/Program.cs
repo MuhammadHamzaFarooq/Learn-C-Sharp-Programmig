@@ -379,6 +379,28 @@ namespace Basic_Syntax
 
             }
             while (values < 19);
+
+
+            //C# for loop
+            //When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+            //Statement 1 is executed (one time) before the execution of the code block.Statement 1 is executed (one time) before the execution of the code block.
+            //Statement 2 defines the condition for executing the code block.
+            //Statement 3 is executed (every time) after the code block has been executed.
+
+            for (a = 0; a< 9; a++)
+            {
+                Console.WriteLine(a);
+                a++;
+            }
+
+            //This example will only print even values between 0 and 10:
+
+
+            for (j =0; j<= 10; j= j + 2)
+            {
+                Console.WriteLine(j);
+                j++;
+            }
         }
 
     }
