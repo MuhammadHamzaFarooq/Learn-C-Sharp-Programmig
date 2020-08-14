@@ -253,10 +253,132 @@ namespace Basic_Syntax
             string txt2 = "my naem is \\ Hamza  ";
             Console.WriteLine(txt2);
 
+            // C# Conditions and If Statements
+            // C# supports the usual logical conditions from mathematics:
+
+            //Less than: a < b
+            //Less than or equal to: a <= b
+            //Greater than: a > b 
+            //Greater than or equal to: a >= b
+            //Equal to a == b
+            //Not Equal to: a != b
+            //You can use these conditions to perform different actions for different decisions.
+
+            //C# has the following conditional statements:
+
+
+            
+            //Use if to specify a block of code to be executed, if a specified condition is true
+            //Use else to specify a block of code to be executed, if the same condition is false
+            //Use else if to specify a new condition to test, if the first condition is false
+            //Use switch to specify many alternative blocks of code to be executed
+
+            int time = 20;
+            if (time < 18)
+            {
+                Console.WriteLine("Good morning ");
+            }
+            else if(time >20 ){
+                Console.WriteLine("Good day ");
+            }
+            else
+            {
+                Console.WriteLine("Good evening ");
+            }
 
 
 
+            //   Short Hand If...Else(Ternary Operator)
+            //There is also a short-hand if else, which is known as the
+            //ternary operator because it consists of three operands. 
+            //It can be used to replace multiple lines of code with a single line.
+            //It is often used to replace simple if else statements:
 
+            int Time = 30;
+            string result = (Time > 77) ? "bad Day " : "Good Day" ;
+            Console.WriteLine(result);
+
+
+
+            //C# Switch Statements
+            //Use the switch statement to select one of many code blocks to be executed.
+
+            //This is how it works:
+
+            // The switch expression is evaluated once
+            //The value of the expression is compared with the values of each case
+            //If there is a match, the associated block of code is executed
+            //The break and default keywords will be described later in this chapter
+
+
+            int day = 2;
+
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+
+                case 3 :
+                    Console.WriteLine("Wedesday");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Tuesday");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+
+               default:
+                    Console.WriteLine("Looking forward to the Weekend.");
+                    break;
+
+            }
+
+            // Loop
+
+            //Loops can execute a block of code as long as a specified condition is reached.
+
+            //Loops are handy because they save time, reduce errors, and they make code more readable.
+
+            //C# While Loop
+
+            //The while loop loops through a block of code as long as a specified condition is True:
+
+            int i = 0;
+            while(i < 8)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+
+
+            //The Do/While Loop
+            //The do/while loop is a variant of the while loop. This loop will execute the code block once, 
+            //before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+            int values = 1;
+            do
+            {
+                Console.WriteLine(values);
+                values++;
+
+            }
+            while (values < 19);
         }
 
     }
