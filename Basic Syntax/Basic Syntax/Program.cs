@@ -6,6 +6,22 @@ namespace Basic_Syntax
 {
     class Program
     {
+
+        //Method Overloading
+
+        //With method overloading, multiple methods can have the same name with different parameters:
+
+
+        static int MehtodPlus(int x, int y)
+        {
+            return x + y;
+        }
+        static double MethodPlus(double x, double y)
+        {
+            return x + y;
+        }
+
+
         static void Main(string[] args)
         {
             // this first hello world  program in C#
@@ -518,9 +534,54 @@ namespace Basic_Syntax
             mymehtod("sufyan");
 
 
+            // Default Parameter Value
+            /*
+             You can also use a default parameter value, by using the equals sign (=). If we call the method without an argument, it uses the default value ("Norway"):
+             */
 
+            static void method(string city = "Norway")
+            {
+                Console.WriteLine(city);
+            }
+
+            //calling mehtod
+            method("pakistan");
+            method(); 
+
+
+            static int sum(int num1 , int num2)
+            {
+                return num1 + num2;
+
+            }
+
+            //calling method 
+            Console.WriteLine(sum(34, 99));
+
+            //Named Argument 
+            //It is also possible to send arguments with the key: value syntax.
+
+            //That way, the order of the arguments does not matter:
+
+            static void human(string chid1, string child2, string child3)
+            {
+                Console.WriteLine("The youngest child is " + child2);
+            }
+
+            //caling method 
+            human(chid1: "jack", child2: "harry", child3: "tom");
+
+
+
+            //calling method 
+
+            int myNum1 = MethodPlus(8, 5);
+            double myNum2 = MethodPlus(4.3, 6.26);
+            Console.WriteLine("Int: " + myNum1);
+            Console.WriteLine("Double: " + myNum2);
 
         }
 
+        
     }
 }
