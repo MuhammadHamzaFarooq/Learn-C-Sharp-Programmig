@@ -127,7 +127,7 @@ namespace Basic_Syntax
             z *= 8; // z = z * 8
 
             double m = 2;
-            m /= 8l; // m = m * 81 
+            m /= 8l; // m = m / 81 
 
             int s = 1;
             s %= 3; // s = s % 3 
